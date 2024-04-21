@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>ToastyVault - Game Deals</title>
+</head>
+<body>
+    <div class="main-container flex flex-column">
+        <header class="base-header">
+            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="pages/catalog.html">Catalog</a>
+                <a href="pages/about.html">About</a>
+            </nav>
+        </header>
+        <main>
+            <div class="background-image-section"></div>
+            <div class="main-section flex flex-column">
+                <h1>Toasty Vault</h1>
+                <p>Your Shortcut to Better Game Prices.</p>
+                <div class="button">
+                    <a href="pages/catalog.html" class="button-link">Browse</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Made by <a href="https://github.com/Eric-Lighthall" target="_blank">Eric Lighthall</a></p>
+        </footer>
+    </div>
+    <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>ToastyVault | Catalog</title>
+</head>
+<body>
+    <div class="catalog-container">
+        <header class="base-header">
+            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+                <a href="../index.html">Home</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+        <button class="mobile-filter-btn btn3d" onclick="toggleFilter()">Search Filters</button>
+        <div class="title-container">
+            <h1>Current deals for <span id="platform-header"></span></h1>
+        </div>
+        <div class="flex catalog-section">
+            <div class="flex browse-container">
+                <div class="browse-filters flex flex-column">
+                    <button class="close-button" onclick="toggleFilter()">Close</button>
+                    <div id="search-filter">
+                        <h3>Search</h3>
+                        <div class="flex">
+                            <input type="text" id="search-query" placeholder="Search Game Title">
+                            <button id="search-button" class="btn3d">Search</button>
+                        </div>
+                    </div>
+                    <div class="dropdownFilter">
+                        <h3>Filter page by</h3>
+                        <select id="filterSelect">
+                            <option value="metacritic">Critic Score</option>
+                            <option value="savings">Discount Percent</option>
+                            <option value="price">Price</option>
+                            <option value="steamRating">Store Rating</option>
+                            <option value="dealRating">ToastyVault Rating</option>
+                        </select>
+                    </div>
+                    <div id="storeSelect">
+                        <h3>Platform</h3>
+                        <div class="btn3d allButton" data-value="0">Select All</div>
+                        <div class="btn3d storeButton" data-value="1">Steam</div>
+                        <div class="btn3d storeButton" data-value="25">Epic Games Store</div>
+                        <div class="btn3d storeButton" data-value="31">Blizzard Store</div>
+                        <div class="btn3d storeButton" data-value="8">Origin</div>
+                        <div class="btn3d storeButton" data-value="13">Uplay</div>
+                        <div class="btn3d storeButton" data-value="11">Humble Bundle</div>
+                    </div>                
+                    <div>
+                        <h3>Price (USD)</h3>
+                        <input type="number" id="minPrice" placeholder="Min">
+                        <span>-</span>
+                        <input type="number" id="maxPrice" placeholder="Max">
+                    </div>
+                    <div id="pagination-container">
+                        <h3>Page Number</h3>
+                        <div id="page-select"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="parent" class="flex justify-center">
+                <div id="deals-container" class="flex flex-wrap">
+        
+                </div>
+                <div class="mobile-buttons">
+                    <button class="btn3d" id="mobile-prev">&lt Prev</button>
+                    <button class="btn3d" id="mobile-next">Next &gt</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/api.js"></script>
+    <script src='../js/ui.js'></script>
+</body>
+</html>

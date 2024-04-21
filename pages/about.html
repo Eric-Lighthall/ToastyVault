@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>ToastyVault - About</title>
+</head>
+<body>
+    <header class="base-header">
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <div class="about-bg flex flex-column align-center">
+        <div class="about-backdrop flex align-center">
+            <div class="about-content flex align-center">
+                <div class="about-text">
+                    <h1><span>About</span> ToastyVault</h1>
+                    <p>ToastyVault is the digital destination for gamers looking to find the best deals on their favorite games. Built on the foundation of the <a href="https://apidocs.cheapshark.com/">CheapShark API</a>, 
+                        this platform aggregates live price data from various online gaming stores to present users with a detailed view of the best available deals.</p>
+                    <p>ToastyVault is made for gamers, by gamers. Using ToastyVault, you can easily browse through a curated selection of discounts, special offers, 
+                        and promotions. It streamlines the process of price comparison, making it possible to acquire sought-after titles at the most competitive rates.</p>
+                </div>
+                <div class="about-image flex align-center">
+                    <img src="../images/toastyvaultlogo.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="faq-container flex flex-column">
+            <div>
+                <h2>What is ToastyVault?</h2>
+                <hr>
+                <p>ToastyVault is a website which provides an easy interface to find the best video game deals out there, without any extra hassle.</p>
+            </div>
+            <div>
+                <h2>How does ToastyVault find deals?</h2>
+                <hr>
+                <p>ToastyVault finds deals using the <a href="https://apidocs.cheapshark.com/">CheapShark API</a> - Those deals are then displayed on the easy to use interface of ToastyVault.</p>
+            </div>
+            <div>
+                <h2>How often are new deals posted?</h2>
+                <hr>
+                <p>In general, deals will update once per hour. This time may not be exact and can sometimes be delayed.</p>
+            </div>
+            <div>
+                <h2>Is ToastyVault free to use?</h2>
+                <hr>
+                <p>ToastyVault is completely free. No ads, subscriptions, or sign-ups.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/ui.js"></script>
+</body>
+</html>
